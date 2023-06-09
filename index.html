@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Denis Novik</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="nav-link current">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="container container-hero">
+        <div class="wrap-hero">
+          <h1 class="title-hero">Denis Novik</h1>
+          <p class="text-hero">UX | UI designer 24 years old, Minsk</p>
+          <ul class="lng-list-dc">
+            <li class="lng-item-dc">
+              <a href="" class="lng-link-dc decor-lng-dc">Ru</a>
+            </li>
+            <li class="lng-item-dc">
+              <a href="" class="lng-link-dc current-lang-dc">Eng</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn-open-menu" data-modal-open>
+          <svg class="icon-burger">
+            <use href="./images/icons.svg#icon-gamburger" class="use-svg"></use>
+          </svg>
+        </button>
+
+        <img
+          srcset="./images/novik-mobil@2x.jpg 2x"
+          src="./images/novik-mobil.jpg"
+          alt="Dinis Novik"
+          class="img-adaptation mobile-hero-img"
+        />
+
+        <img
+          srcset="./images/novik@2x.jpg 2x"
+          src="./images/novik.jpg"
+          alt="Dinis Novik"
+          class="img-adaptation dc-hero-img"
+        />
+      </div>
+    </section>
+
+    <!-- -----------ABOUT ME---------------------- -->
+
+    <section class="section-about">
+      <div class="container">
+        <h2 class="title-about">About me</h2>
+        <ul class="about-list">
+          <li class="about-item">
+            <p class="about-text">
+              Hi, I'm Denis – UX/UI designer from Minsk. <br />
+              I'm interested in design and everything connected with it.
+            </p>
+          </li>
+          <li class="about-item">
+            <p class="about-text">
+              I'm studying at courses "Web and mobile design interfaces" in
+              IT-Academy.
+            </p>
+          </li>
+          <li class="about-item">
+            <p class="about-text">
+              Ready to implement excellent projects <br />
+              with wonderful people.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ---------------------------------MENU----------------------------------- -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="container-menu">
+        <button class="btn-close-menu" type="button" data-modal-close>
+          <svg class="close-icon" width="21" height="22">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu-list">
+          <li class="nav-item"><a href="" class="nav-link current">Home</a></li>
+          <li class="nav-item"><a href="" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
+        </ul>
+        <ul class="language-list">
+          <li class="language-item">
+            <a href="" class="language-link decor">Ru</a>
+          </li>
+          <li class="language-item">
+            <a href="" class="language-link current-lang">Eng</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
